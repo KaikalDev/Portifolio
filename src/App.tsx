@@ -14,7 +14,9 @@ function App() {
       <Header />
       <Container>
         <Home />
-        <SobreMin />
+      </Container>
+      <SobreMin />
+      <Container>
         <Habilidades />
         <Projetos />
         <Certificados />

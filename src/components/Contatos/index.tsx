@@ -3,6 +3,7 @@ import Linkedin from '../../assets/Icons/Linkedin.png'
 import Telefone from '../../assets/Icons/Phone.png'
 import Email from '../../assets/Icons/mail.png'
 import baixar from '../../assets/Icons/Dowload.png'
+
 import { ContainerContact } from './styles'
 
 const Contato = () => (
@@ -47,7 +48,7 @@ const Contato = () => (
           </a>
         </li>
       </ul>
-      <div className="Foto">
+      <div className="Button">
         <a
           href="https://docs.google.com/document/d/1MVxZRpnukx_IQX1AS0R-9VKwhAXX5i0DRlFJURHpBrU/edit?usp=sharing"
           className="Button"
@@ -57,11 +58,6 @@ const Contato = () => (
           <p>Curriculo</p>
           <img src={baixar} alt="Curriculo" />
         </a>
-        <img
-          className="Perfil"
-          src="https://placehold.co/500x500/000/fff/png"
-          alt=""
-        />
       </div>
     </div>
   </ContainerContact>

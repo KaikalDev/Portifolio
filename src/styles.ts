@@ -6,7 +6,8 @@ export const Colors = {
   secondary: '#007acc',
   white: '#eee',
   darkBlue: '#0a2472',
-  borda: '#4958b0'
+  borda: '#4958b0',
+  background2: '#022458'
 }
 
 export const Fonts = {

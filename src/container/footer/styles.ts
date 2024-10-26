@@ -6,7 +6,9 @@ export const ContainerFooter = styled.footer`
   padding: 12px;
 
   p {
+    margin-right: 48px;
     font-size: 18px;
     font-family: ${Fonts.oswald};
+    text-align: end;
   }
 `

@@ -2,18 +2,22 @@ import styled from 'styled-components'
 import { Colors, Fonts } from '../../styles'
 
 export const HeaderContainer = styled.header`
-  background-color: ${Colors.primary};
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 12vw;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 1;
 
-  h1 {
-    font-family: ${Fonts.montserrat};
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: ${Colors.primary};
+    padding: 0 12vw;
+  }
+
+  img {
+    height: 50px;
   }
 
   nav {

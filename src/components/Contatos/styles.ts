@@ -12,8 +12,8 @@ export const ContainerContact = styled.div`
 
     h3 {
       text-align: center;
-      margin-bottom: 15px;
-      font-size: 22px;
+      margin-bottom: 30px;
+      font-size: 24px;
       font-family: ${Fonts.oswald};
     }
 
@@ -40,47 +40,35 @@ export const ContainerContact = styled.div`
       }
     }
 
-    &.Foto {
-      width: 100%;
+    .Button {
       border: none;
       padding: 0;
-      margin-top: 12px;
       display: flex;
-      align-items: end;
-      justify-content: space-between;
+      justify-content: center;
+      margin-top: 18px;
 
-      .Perfil {
-        border: 3px solid ${Colors.white};
-        border-bottom: 12px solid ${Colors.white};
-        border-color: ${Colors.white};
-        width: max-content;
-        display: flex;
-        padding: 0;
-        max-width: 80px;
-      }
-
-      .Button {
-        background-color: transparent;
-        border: 1px solid ${Colors.white};
+      a {
+        background-color: ${Colors.secondary};
         padding: 12px;
-        height: max-content;
+        width: max-content;
         border-radius: 50px;
         display: flex;
         gap: 8px;
         align-items: center;
-        font-size: 12px;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
         transition: all ease 0.5s;
         cursor: pointer;
 
         &:hover {
           transition: all ease 0.5s;
           transform: scale(1.08);
-          background-color: #ffffff2f;
         }
+      }
 
-        img {
-          width: 15px;
-        }
+      img {
+        width: 15px;
       }
     }
   }

@@ -9,6 +9,7 @@ const Projeto = ({ Projeto }: Props) => (
   <ContainerProjeto>
     <Gif src={Projeto.img} alt="img" />
     <div>
+      <h2>{Projeto.Title}</h2>
       <p>{Projeto.Descrição}</p>
       <div>
         <a target="_blank" href={Projeto.LinkGitHub} rel="noreferrer">

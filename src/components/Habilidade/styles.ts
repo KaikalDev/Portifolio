@@ -1,14 +1,21 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles'
+import { Colors, Fonts } from '../../styles'
 
 export const ContainerHabilidade = styled.div`
   background-color: ${Colors.darkBlue};
-  padding: 12px;
+  padding: 24px;
   height: 100%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   h1 {
     text-align: center;
     margin-bottom: 12px;
+    font-size: 22px;
+    font-family: ${Fonts.oswald};
+    font-weight: normal;
   }
 
   ul {
@@ -21,10 +28,16 @@ export const ContainerHabilidade = styled.div`
 
 export const ContainerEstatistic = styled.div`
   background-color: ${Colors.darkBlue};
-  padding: 12px;
   height: 100%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   h1 {
     text-align: center;
+    font-size: 22px;
+    font-family: ${Fonts.oswald};
+    font-weight: normal;
   }
 `

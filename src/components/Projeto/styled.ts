@@ -4,9 +4,10 @@ import { Colors, Fonts } from '../../styles'
 
 export const Gif = styled.img`
   width: 40%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
   object-position: top;
+  border-radius: 20px;
 
   &:hover {
     animation: scrollDown 20s ease-in-out infinite;
@@ -27,13 +28,17 @@ export const Gif = styled.img`
 
 export const ContainerProjeto = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 22px;
+  justify-content: space-between;
+  gap: 32px;
   width: 100%;
-  padding: 25px;
+  padding: 25px 12px;
   background-color: ${Colors.darkBlue};
   text-align: justify;
+  border-radius: 20px;
+
+  h2 {
+    font-family: ${Fonts.montserrat};
+  }
 
   &:nth-child(even) {
     flex-direction: row-reverse;
@@ -45,8 +50,14 @@ export const ContainerProjeto = styled.div`
     }
   }
 
+  p {
+    line-height: 22px;
+    font-size: 18px;
+    font-family: ${Fonts.montserrat};
+  }
+
   > div {
-    width: 50%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 8px;

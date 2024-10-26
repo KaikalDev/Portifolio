@@ -22,17 +22,21 @@ const Habilidade = ({ habilidade }: Props) => (
   <div>
     {habilidade ? (
       <ContainerHabilidade>
-        <h1>{habilidade.title}</h1>
-        <ul>
-          {habilidade.tecnologias.map((tec) => (
-            <Tag img={tec.img} nome={tec.nome} key={tec.nome} />
-          ))}
-        </ul>
+        <div>
+          <h1>{habilidade.title}</h1>
+          <ul>
+            {habilidade.tecnologias.map((tec) => (
+              <Tag img={tec.img} nome={tec.nome} key={tec.nome} />
+            ))}
+          </ul>
+        </div>
       </ContainerHabilidade>
     ) : (
       <ContainerEstatistic>
-        <h1>Linguagens mais usadas</h1>
-        <img src={gitURL} alt="" />
+        <div>
+          <h1>LINGUAGENS MAIS USADAS</h1>
+          <img src={gitURL} alt="" />
+        </div>
       </ContainerEstatistic>
     )}
   </div>

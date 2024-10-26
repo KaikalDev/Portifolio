@@ -3,7 +3,7 @@ import Habilidade from '../../components/Habilidade'
 import { ContainerHabilidade } from './styles'
 
 const Domínio: Habilidade = {
-  title: 'Domíno',
+  title: 'COM DOMÍNIO EM:',
   tecnologias: [
     {
       img: IconsTecnologias.ts,
@@ -57,7 +57,7 @@ const Domínio: Habilidade = {
 }
 
 const Conheco: Habilidade = {
-  title: 'Conheço',
+  title: 'CONHECIMENTO EM:',
   tecnologias: [
     {
       img: IconsTecnologias.Java,

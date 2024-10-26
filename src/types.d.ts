@@ -9,6 +9,7 @@ declare type Habilidade = {
 }
 
 declare type Projeto = {
+  Title: string
   img: string
   Descrição: string
   LinkGitHub: string
