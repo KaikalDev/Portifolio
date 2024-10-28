@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors, Fonts } from '../../styles'
+import { breakpoints, Colors, Fonts } from '../../styles'
 
 export const ContainerHabilidade = styled.div`
   background-color: ${Colors.darkBlue};
@@ -23,6 +23,18 @@ export const ContainerHabilidade = styled.div`
     grid-template-columns: 1fr 1fr;
     row-gap: 12px;
     column-gap: 8px;
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    ul {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    ul {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 `
 

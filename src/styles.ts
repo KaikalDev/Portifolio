@@ -16,6 +16,11 @@ export const Fonts = {
   oswald: `"Oswald", sans-serif`
 }
 
+export const breakpoints = {
+  desktop: '1024px',
+  tablet: '768px'
+}
+
 const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
@@ -40,6 +45,10 @@ export const Container = styled.div`
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 80vw;
+  }
 `
 
 export const Secao = styled.section`
@@ -47,12 +56,16 @@ export const Secao = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80vh;
+  margin-top: 5vh;
 
   &.projetos {
     flex-direction: column;
     gap: 16px;
     height: auto;
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    flex-direction: column-reverse;
   }
 `
 

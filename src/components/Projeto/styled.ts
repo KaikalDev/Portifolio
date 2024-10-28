@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { TagItem } from '../Tag/styles'
-import { Colors, Fonts } from '../../styles'
+import { breakpoints, Colors, Fonts } from '../../styles'
 
 export const Gif = styled.img`
   width: 40%;
@@ -23,6 +23,10 @@ export const Gif = styled.img`
         object-position: top;
       }
     }
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    width: 100%;
   }
 `
 
@@ -81,6 +85,24 @@ export const ContainerProjeto = styled.div`
     img {
       height: 30px;
       width: 30px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    flex-direction: column;
+    > div {
+      div:last-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
+  @media (max-width: ${breakpoints.tablet}) {
+    > div {
+      div:last-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
     }
   }
 `

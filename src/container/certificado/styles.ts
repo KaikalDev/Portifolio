@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles'
+import { breakpoints, Colors } from '../../styles'
 
 export const ContainerCerts = styled.div`
   margin-top: 48px;
@@ -28,6 +28,20 @@ export const ContainerCerts = styled.div`
       border: none;
       background-color: ${Colors.background2};
       cursor: pointer;
+    }
+  }
+  @media (max-width: ${breakpoints.desktop}) {
+    > div:last-child {
+      height: auto;
+
+      button {
+        display: none;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 `

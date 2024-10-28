@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles'
+import { breakpoints, Colors } from '../../styles'
 
 export const ContainerFormacao = styled.div`
   padding-right: 20px;
@@ -31,6 +31,22 @@ export const ContainerFormacao = styled.div`
 
     &.top {
       border-bottom: 1px solid ${Colors.white};
+    }
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 80%;
+    padding-right: 0;
+    margin-top: 5vh;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    div {
+      flex-direction: column;
+
+      p {
+        text-align: justify;
+      }
     }
   }
 `

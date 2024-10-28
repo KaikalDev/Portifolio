@@ -1,10 +1,10 @@
+import { useState } from 'react'
 import cert1 from '../../assets/images/certificados/neon.png'
 import cert2 from '../../assets/images/certificados/Ti_do_zero_ao_pro.png'
 import cert3 from '../../assets/images/certificados/Workshop Redux.png'
 import cert4 from '../../assets/images/certificados/Certificado_JavaSwing.jpg'
 import Seta_L from '../../assets/images/Icons/seta_Esquerda.png'
 import Seta_D from '../../assets/images/Icons/seta_Direita.png'
-import { useState } from 'react'
 import { ContainerCerts } from './styles'
 import Separador from '../../components/Separacao'
 
@@ -16,18 +16,41 @@ const certificados = [
 ]
 
 const Certificados = () => {
-  const [index, setIndex] = useState(1)
+  const [index, setIndex] = useState(0)
+  const [touchStart, setTouchStart] = useState<number | null>(null)
 
   const proximo = () =>
-    index < certificados.length - 1 ? setIndex(index + 1) : setIndex(0)
+    setIndex((prevIndex) =>
+      prevIndex < certificados.length - 1 ? prevIndex + 1 : 0
+    )
 
   const anterior = () =>
-    index > 0 ? setIndex(index - 1) : setIndex(certificados.length - 1)
+    setIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : certificados.length - 1
+    )
+
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    setTouchStart(e.touches[0].clientX)
+  }
+
+  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (touchStart === null) return
+    const touchEnd = e.changedTouches[0].clientX
+    const swipeDistance = touchStart - touchEnd
+
+    if (swipeDistance > 50) {
+      proximo()
+    } else if (swipeDistance < -50) {
+      anterior()
+    }
+
+    setTouchStart(null)
+  }
 
   return (
     <ContainerCerts id="Certificados">
       <Separador title="CERTIFICADOS" />
-      <div>
+      <div onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         <button onClick={anterior}>
           <img src={Seta_L} alt="Anterior" />
         </button>
@@ -39,4 +62,5 @@ const Certificados = () => {
     </ContainerCerts>
   )
 }
+
 export default Certificados

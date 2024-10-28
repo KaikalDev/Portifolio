@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors, Container, Fonts } from '../../styles'
+import { breakpoints, Colors, Container, Fonts } from '../../styles'
 
 export const ContainerSobre = styled.div`
   background-color: ${Colors.darkBlue};
@@ -59,6 +59,29 @@ export const ContainerSobre = styled.div`
       font-size: 18px;
       text-align: justify;
       font-family: ${Fonts.montserrat};
+    }
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    height: max-content;
+
+    > ${Container} {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Foto {
+      width: calc(30vw + (15vw / 2));
+      height: calc(30vw + (15vw / 2));
+
+      img {
+        &:first-child {
+          width: 30vw;
+        }
+        &:last-child {
+          width: 15vw;
+        }
+      }
     }
   }
 `
