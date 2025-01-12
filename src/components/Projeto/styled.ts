@@ -27,13 +27,14 @@ export const Gif = styled.img`
 
   @media (max-width: ${breakpoints.desktop}) {
     width: 100%;
+    height: auto;
   }
 `
 
 export const ContainerProjeto = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 32px;
+  align-items: center;
   width: 100%;
   padding: 25px 12px;
   background-color: ${Colors.darkBlue};
@@ -44,16 +45,6 @@ export const ContainerProjeto = styled.div`
     font-family: ${Fonts.montserrat};
   }
 
-  &:nth-child(even) {
-    flex-direction: row-reverse;
-
-    > div {
-      div {
-        flex-direction: row-reverse;
-      }
-    }
-  }
-
   p {
     line-height: 22px;
     font-size: 18px;
@@ -61,13 +52,15 @@ export const ContainerProjeto = styled.div`
   }
 
   > div {
-    flex: 1;
+    max-width: calc(60% - 32px);
     display: flex;
     flex-direction: column;
     gap: 8px;
 
     div {
       display: flex;
+      max-width: 100%;
+      flex-wrap: wrap;
       gap: 12px;
     }
   }
@@ -91,6 +84,7 @@ export const ContainerProjeto = styled.div`
   @media (max-width: ${breakpoints.desktop}) {
     flex-direction: column;
     > div {
+      max-width: 100%;
       div:last-child {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -27,20 +27,20 @@ export const HeaderContainer = styled.header`
 
 export const HamburgerIcon = styled.div`
   display: none;
-  flex-direction: column;
-  cursor: pointer;
-
-  span {
-    height: 3px;
-    width: 25px;
-    background: white;
-    margin: 4px;
-    border-radius: 3px;
-    transition: 0.3s;
-  }
 
   @media (max-width: ${breakpoints.desktop}) {
     display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px;
+      border-radius: 3px;
+      transition: 0.3s;
+    }
   }
 `
 

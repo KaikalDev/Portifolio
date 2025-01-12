@@ -12,9 +12,13 @@ const Projeto = ({ Projeto }: Props) => (
       <h2>{Projeto.Title}</h2>
       <p>{Projeto.Descrição}</p>
       <div>
-        <a target="_blank" href={Projeto.LinkGitHub} rel="noreferrer">
-          Repositorio GitHub
-        </a>
+        {Projeto.LinkGitHub ? (
+          <a target="_blank" href={Projeto.LinkGitHub} rel="noreferrer">
+            Repositorio GitHub
+          </a>
+        ) : (
+          <a>Repositorio privado</a>
+        )}
         <a target="_blank" href={Projeto.LinkVercel} rel="noreferrer">
           Repositorio Vercel
         </a>

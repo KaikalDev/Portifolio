@@ -5,24 +5,43 @@ import { ContainerProjetos } from './styles'
 
 const Repositorios: Projeto[] = [
   {
-    Title: 'Copia do Disney+',
+    Title: "Liane's Pastel",
     Descrição:
-      'Este projeto é uma réplica da plataforma Disney+ desenvolvida como parte da atividade do curso Fullstack Java da EBAC. O projeto utiliza o Gulp para automatizar tarefas, como a compilação de SASS e otimização de imagens, com o objetivo de agilizar o processo de construção para desenvolvimento web moderno. Integra várias bibliotecas para gerenciamento de arquivos, streams e outras utilidades.',
-    img: ImgProjetos.CopiaDisney,
-    LinkGitHub: 'https://github.com/KaikalDev/Copia_disney',
-    LinkVercel: 'https://copia-disney.vercel.app/',
+      "O projeto Line's Pastel visa otimizar as vendas da pastelaria, oferecendo uma plataforma que facilita o gerenciamento de pedidos e o controle financeiro com a geração automática de planilhas de vendas. A área administrativa permite o monitoramento em tempo real dos pedidos, enquanto a integração com uma API garante a comunicação eficiente com o banco de dados. O design produzido por Rhubi Marçal, alia estética refinada e usabilidade, proporcionando uma experiência visual intuitiva para clientes e administradores.",
+    img: ImgProjetos.lianesPastel,
+    LinkVercel: 'https://liane-s-pastel.vercel.app/',
     tecnologias: [
+      {
+        img: IconsTecnologias.ts,
+        nome: 'TypeScript'
+      },
+      {
+        img: IconsTecnologias.React,
+        nome: 'React'
+      },
+      {
+        img: IconsTecnologias.redux,
+        nome: 'Redux'
+      },
+      {
+        img: IconsTecnologias.neon,
+        nome: 'Neon'
+      },
+      {
+        img: IconsTecnologias.Prisma,
+        nome: 'Prisma'
+      },
       {
         img: IconsTecnologias.Javascript,
         nome: 'JavaScript'
       },
       {
-        img: IconsTecnologias.gulp,
-        nome: 'Gulp'
+        img: IconsTecnologias.appScript,
+        nome: 'AppScript'
       },
       {
-        img: IconsTecnologias.sass,
-        nome: 'Sass'
+        img: IconsTecnologias.Planilhas,
+        nome: 'Planilhas'
       }
     ]
   },

@@ -20,6 +20,11 @@ import git from './images/Icons/git.png'
 import grunt from './images/Icons/Grunt.png'
 import gulp from './images/Icons/gulp.png'
 import less from './images/Icons/less.png'
+import sql from './images/Icons/SQL.png'
+import neon from './images/Icons/neon.png'
+import appScript from './images/Icons/appScript.svg'
+import Planilhas from './images/Icons/planilhas.png'
+import Prisma from './images/Icons/prisma.png'
 
 export const IconsTecnologias = {
   CMM,
@@ -43,7 +48,12 @@ export const IconsTecnologias = {
   git,
   grunt,
   gulp,
-  less
+  less,
+  sql,
+  neon,
+  Planilhas,
+  Prisma,
+  appScript
 }
 
 import CopiaDisney from './images/ImgProjects/copia-disney.png'
@@ -51,11 +61,13 @@ import efood from './images/ImgProjects/efood.png'
 import eplay from './images/ImgProjects/eplay.png'
 import LKRViagens from './images/ImgProjects/lkr-viagens.png'
 import SiteKamila from './images/ImgProjects/site-kamila-simoes.png'
+import lianesPastel from './images/ImgProjects/liane-s-pastel.png'
 
 export const ImgProjetos = {
   CopiaDisney,
   efood,
   eplay,
   LKRViagens,
-  SiteKamila
+  SiteKamila,
+  lianesPastel
 }

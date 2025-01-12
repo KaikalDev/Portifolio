@@ -12,7 +12,7 @@ declare type Projeto = {
   Title: string
   img: string
   Descrição: string
-  LinkGitHub: string
+  LinkGitHub?: string
   LinkVercel: string
   tecnologias: Tecnologia[]
 }

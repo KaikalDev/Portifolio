@@ -10,6 +10,10 @@ const Domínio: Habilidade = {
       nome: 'TypeScript'
     },
     {
+      img: IconsTecnologias.Java,
+      nome: 'Java'
+    },
+    {
       img: IconsTecnologias.Javascript,
       nome: 'JavaScript'
     },
@@ -42,10 +46,6 @@ const Domínio: Habilidade = {
       nome: 'Less'
     },
     {
-      img: IconsTecnologias.Jquery,
-      nome: 'jQuery'
-    },
-    {
       img: IconsTecnologias.bootstrap,
       nome: 'Bootstrap'
     },
@@ -60,20 +60,8 @@ const Conheco: Habilidade = {
   title: 'CONHECIMENTO EM:',
   tecnologias: [
     {
-      img: IconsTecnologias.Java,
-      nome: 'Java'
-    },
-    {
-      img: IconsTecnologias.CMM,
-      nome: 'C++'
-    },
-    {
-      img: IconsTecnologias.C,
-      nome: 'C'
-    },
-    {
-      img: IconsTecnologias.Ccharp,
-      nome: 'C#'
+      img: IconsTecnologias.Jquery,
+      nome: 'jQuery'
     },
     {
       img: IconsTecnologias.pandas,
@@ -98,6 +86,10 @@ const Conheco: Habilidade = {
     {
       img: IconsTecnologias.grunt,
       nome: 'Grunt'
+    },
+    {
+      img: IconsTecnologias.sql,
+      nome: 'SQL'
     }
   ]
 }
