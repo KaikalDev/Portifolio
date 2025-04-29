@@ -50,7 +50,7 @@ const Contato = () => (
       </ul>
       <div className="Button">
         <a
-          href="https://docs.google.com/document/d/1MVxZRpnukx_IQX1AS0R-9VKwhAXX5i0DRlFJURHpBrU/edit?usp=sharing"
+          href="https://drive.google.com/file/d/1FHSbgUHisVcTUA08gPHsYIcmq9k4C6KB/view?usp=sharing"
           className="Button"
           target="_blank"
           rel="noreferrer"

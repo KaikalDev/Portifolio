@@ -1,18 +1,16 @@
 import { useState } from 'react'
-import cert1 from '../../assets/images/certificados/neon.png'
-import cert2 from '../../assets/images/certificados/Ti_do_zero_ao_pro.png'
-import cert3 from '../../assets/images/certificados/Workshop Redux.png'
-import cert4 from '../../assets/images/certificados/Certificado_JavaSwing.jpg'
+import { ImgCerts } from '../../assets/Images'
 import Seta_L from '../../assets/images/Icons/seta_Esquerda.png'
 import Seta_D from '../../assets/images/Icons/seta_Direita.png'
 import { ContainerCerts } from './styles'
 import Separador from '../../components/Separacao'
 
 const certificados = [
-  { img: cert1, alt: 'Certificado Neon' },
-  { img: cert2, alt: 'Certificado Ti do Zero ao Pro' },
-  { img: cert3, alt: 'Certificado Workshop Redux' },
-  { img: cert4, alt: 'Certificado Java Swing' }
+  { img: ImgCerts.cert_FullStackJava, alt: 'Certificado Full-Stack Java' },
+  { img: ImgCerts.cert_GitCopilot, alt: 'Certificado Git Copilot' },
+  { img: ImgCerts.cert_TiZeroAoPro, alt: 'Certificado Ti do Zero ao Pro' },
+  { img: ImgCerts.cert_WorkShopRedux, alt: 'Certificado Workshop Redux' },
+  { img: ImgCerts.cert_JavaSwing, alt: 'Certificado Java Swing' }
 ]
 
 const Certificados = () => {

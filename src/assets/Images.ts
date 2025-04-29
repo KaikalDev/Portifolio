@@ -71,3 +71,17 @@ export const ImgProjetos = {
   SiteKamila,
   lianesPastel
 }
+
+import cert_TiZeroAoPro from './images/certificados/Ti_do_zero_ao_pro.png'
+import cert_JavaSwing from './images/certificados/Certificado_JavaSwing.jpg'
+import cert_WorkShopRedux from './images/certificados/Workshop Redux.png'
+import cert_FullStackJava from './images/certificados/Fullstack_Java.png'
+import cert_GitCopilot from './images/certificados/GitHub-Copilot.png'
+
+export const ImgCerts = {
+  cert_TiZeroAoPro,
+  cert_FullStackJava,
+  cert_GitCopilot,
+  cert_JavaSwing,
+  cert_WorkShopRedux
+}
